@@ -10,6 +10,7 @@ public class TC001 {
     public void OpenUrl(){
         driver = new ChromeDriver();
         driver.navigate().to("https://tutorialsninja.com/demo/");
+        driver.manage().window().maximize();
     }
 
 }

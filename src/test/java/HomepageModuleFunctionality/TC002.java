@@ -19,48 +19,47 @@ import java.util.regex.Pattern;
 
 public class TC002 extends TC001{
     @FindBy(xpath = "//*[@id=\"top-links\"]/ul/li[2]")
-    private WebElement MyAccountButton;
+    protected WebElement MyAccountButton;
     @FindBy(xpath = "//*[@id=\"top-links\"]/ul/li[2]/ul/li[1]/a")
-    private WebElement RegisterButton;
+    protected WebElement RegisterButton;
 
     @FindBy(xpath="//*[@id=\"column-right\"]/div/a[1]")
-    private WebElement loginButton;
+    protected WebElement loginButton;
 
     @FindBy(xpath="//*[@id=\"column-right\"]/div/a[13]")
-    private WebElement LogoutButton;
+    protected WebElement LogoutButton;
 
 
     @FindBy(xpath= "//*[@id=\"input-firstname\"]")
-    private WebElement FirstNameLoc;
+    protected WebElement FirstNameLoc;
     @FindBy(xpath = "//*[@id=\"input-lastname\"]")
-    private WebElement LastNameLoc;
+    protected WebElement LastNameLoc;
     @FindBy(xpath = "//*[@id=\"input-email\"]")
-    private WebElement EmailLoc;
+    protected WebElement EmailLoc;
     @FindBy(xpath = "//*[@id=\"input-telephone\"]")
-    private WebElement telephoneloc;
+    protected WebElement telephoneloc;
     @FindBy(xpath = "//*[@id=\"input-password\"]")
-    private WebElement passwordloc;
+    protected WebElement passwordloc;
     @FindBy(xpath = "//*[@id=\"input-confirm\"]")
-    private WebElement ConPasswordloc;
+    protected WebElement ConPasswordloc;
     @FindBy(xpath = "//*[@id=\"content\"]/form/div/div/input[1]")
-    private WebElement TickBoxloc;
+    protected WebElement TickBoxloc;
     @FindBy(xpath = "//*[@id=\"content\"]/form/div/div/input[2]")
-    private WebElement ContinueButtonloc;
+    protected WebElement ContinueButtonloc;
 
     @FindBy(xpath = "//*[@id=\"content\"]/h1")
-    private WebElement YourAccountCreatedMessage;
+    protected WebElement YourAccountCreatedMessage;
     @FindBy(xpath = "//*[@id=\"content\"]/p[1]")
-    private WebElement SecondLine;
+    protected WebElement SecondLine;
     @FindBy(xpath = "//*[@id=\"content\"]/p[2]")
-    private WebElement ThirdLine;
+    protected WebElement ThirdLine;
     @FindBy(xpath = "//*[@id=\"content\"]/p[3]")
-    private  WebElement FourthLine;
+    protected  WebElement FourthLine;
     @FindBy(xpath = "//*[@id=\"content\"]/p[4]")
-    private  WebElement FivthLine;
+    protected  WebElement FivthLine;
     @Test
     public void TC002(){
         OpenUrl();
-        driver.manage().window().maximize();
         PageFactory.initElements(driver,this);
         //Click On My Account Button
         MyAccountButton.click();
