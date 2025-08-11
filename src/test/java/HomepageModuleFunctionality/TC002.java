@@ -12,6 +12,7 @@ import org.testng.annotations.Test;
 
 import javax.lang.model.element.Name;
 import javax.xml.xpath.XPath;
+import java.net.MalformedURLException;
 import java.time.Duration;
 import java.util.Date;
 import java.util.regex.Matcher;
@@ -57,6 +58,10 @@ public class TC002 extends TC001{
     protected  WebElement FourthLine;
     @FindBy(xpath = "//*[@id=\"content\"]/p[4]")
     protected  WebElement FivthLine;
+
+    public TC002() throws MalformedURLException {
+    }
+
     @Test
     public void TC002(){
         OpenUrl();

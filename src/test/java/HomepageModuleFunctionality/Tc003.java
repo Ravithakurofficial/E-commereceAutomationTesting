@@ -5,6 +5,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
+import java.net.MalformedURLException;
+
 public class Tc003 extends TC002 {
     @FindBy(xpath = "//*[@id=\"top-links\"]/ul/li[2]/ul/li[2]/a")
     protected WebElement LoginButtonloc;
@@ -25,6 +27,9 @@ public class Tc003 extends TC002 {
 
     @FindBy(xpath = "//*[@id=\"content\"]/div/div[2]/div/form/input")
     protected WebElement LoginButton;
+
+    public Tc003() throws MalformedURLException {
+    }
 
     @Test
     public void Tc003(){
